@@ -1,53 +1,52 @@
 .sidePanel {
     background-color: $dark-grey;
-    line-height: 1.5;
-    height: calc(100vh - 3.125rem); // - 50px
-    width: calculate_rem(250px);
     position: fixed;
     top: calculate_rem(50px);
+    height: calc(100vh - 3.125rem); // - 50px
+    width: calculate_rem(250px);
+    padding: calculate_rem(20px);
 
-    .container {
-        padding: calculate_rem(20px);
+
+    .summary {
+        height: calc(100% - 3.125rem); // - 30px - 20px
+        overflow: auto;
+
+        .chapter {
+            margin-bottom: calculate_rem(40px);
+
+            .title {
+                margin: 0 0 calculate_rem(10px) 0;
+                font-size: 1rem;
+                border-bottom: 2px black solid;
+            }
+
+            .list {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+        }
     }
 
-    &__menu {
-        height: 100%;
-    }
-
-    &__title {
-        font-weight: 700;
-        margin-bottom: calculate_rem(5px);
-        border-bottom: 2px black solid;
-    }
-
-    &__list {
-        margin-bottom: calculate_rem(42px);
-    }
-
-    &__exit {
-        background: $dark-grey;
-        border: none;
-    }
-
-    &__link {
+    .exit {
         text-decoration: none;
         position: absolute;
-        bottom: calculate_rem(20px);
-        left: calculate_rem(20px);
-    }
+        bottom: 20px;
 
-    &__text {
-        display: inline-block;
-        color: black;
-        font-size: calculate_rem(20px);
-        font-weight: 700;
-        vertical-align: middle;
-    }
+        .text {
+            margin: 0;
+            display: inline-block;
+            color: black;
+            font-size: calculate_rem(20px);
+            font-weight: 700;
+            vertical-align: middle;
+        }
 
-    &__image {
-        display: inline-block;
-        width: calculate_rem(30px);
-        margin-left: calculate_rem(10px);
-        vertical-align: middle;
+        .image {
+            display: inline-block;
+            width: calculate_rem(30px);
+            margin-left: calculate_rem(10px);
+            vertical-align: middle;
+        }
     }
 }

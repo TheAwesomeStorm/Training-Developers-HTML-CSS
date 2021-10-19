@@ -1,0 +1,40 @@
+.header {
+    background-color: $light-grey;
+    //height: calculate_rem(50px);
+    width: 100vw;
+    position: fixed;
+    top: 0;
+
+    .container {
+        height: calculate_rem(50px);
+        margin: 0 calculate_rem(20px);
+    }
+
+    &__logo {
+        width: calculate_rem(42px);
+        margin: calculate_rem(calc((50px - 42px)/2)) 0;
+    }
+
+    &__list {
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        top: calculate_rem(calc((50px - 16px)/2));
+        margin-right: calculate_rem(20px);
+    }
+
+    &__item {
+        display: inline-block;
+        font-weight: 700;
+        padding-bottom: calculate_rem(12.2px);
+
+        &:hover {
+            border-bottom: $light-blue 2px solid;
+            cursor: pointer;
+        }
+
+        &:not(:last-child) {
+            margin-right: calculate_rem(16px);
+        }
+    }
+}

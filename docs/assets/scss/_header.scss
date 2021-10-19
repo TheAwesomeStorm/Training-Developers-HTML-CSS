@@ -1,0 +1,39 @@
+.header {
+    background-color: $light-grey;
+    width: 100vw;
+    height: calculate_rem(50px);
+    padding: 0 calculate_rem(20px);
+    position: fixed;
+    top: 0;
+
+    .logo {
+        display: inline-block;
+        width: calculate_rem(42px);
+        margin: calculate_rem(calc(50px - 42px)/2) 0; // 50px
+    }
+
+    .menu {
+        display: inline-block;
+        height: calculate_rem(50px);
+        position: absolute;
+        right: calculate_rem(10px);
+
+        .list {
+            margin: 0;
+            padding: 0;
+
+            .item {
+                display: inline-block;
+                font-weight: 700;
+                height: calculate_rem(50px);
+                padding: calc((3.125rem - 1.5rem)/2) calculate_rem(10px);
+
+                &:hover {
+                    color: $light-blue;
+                    cursor: pointer;
+                    border-bottom: 2px solid $light-blue;
+                }
+            }
+        }
+    }
+}

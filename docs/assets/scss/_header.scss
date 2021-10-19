@@ -1,6 +1,5 @@
 .header {
     background-color: $light-grey;
-    //height: calculate_rem(50px);
     width: 100vw;
     position: fixed;
     top: 0;
@@ -25,8 +24,8 @@
 
     &__item {
         display: inline-block;
-        font-weight: 700;
         padding-bottom: calculate_rem(12.2px);
+        font-weight: 700;
 
         &:hover {
             border-bottom: $light-blue 2px solid;

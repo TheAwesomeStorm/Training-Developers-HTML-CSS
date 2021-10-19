@@ -1,16 +1,16 @@
 .readPanel {
-    position: absolute;
     height: calc(100vh - 9.875rem); //- 50px - 20px - 20px - 48px - 20px
     width: calc(100vw - 15.625rem); //100vw - 250px
+    position: absolute;
     top: calculate_rem(70px);
     left: calculate_rem(250px);
     overflow: auto;
 
     .container {
-        margin: 0 calculate_rem(20px);
-        padding: 0 calculate_rem(20px);
         min-height: calc(100vh - 9.875rem);
         width: calc(100vw - 18.125rem); // 100vw - 250px - 20px - 20px
+        margin: 0 calculate_rem(20px);
+        padding: 0 calculate_rem(20px);
         background: $medium-grey;
         line-height: 1.5;
     }

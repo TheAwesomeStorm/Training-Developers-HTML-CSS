@@ -37,17 +37,17 @@
     }
 
     &__text {
-        color: black;
         display: inline-block;
+        color: black;
         font-size: calculate_rem(20px);
         font-weight: 700;
         vertical-align: middle;
     }
 
     &__image {
-        margin-left: calculate_rem(10px);
-        width: calculate_rem(30px);
-        vertical-align: middle;
         display: inline-block;
+        width: calculate_rem(30px);
+        margin-left: calculate_rem(10px);
+        vertical-align: middle;
     }
 }

@@ -1,0 +1,20 @@
+.footer {
+    position: fixed;
+    width: calc(100vw - 250px);
+    left: calculate_rem(250px);
+    bottom: calculate_rem(20px);
+
+    .container {
+        height: calculate_rem(48px);
+        margin: 0 calculate_rem(20px);
+        vertical-align: middle;
+        background: $medium-grey;
+    }
+
+    &__text {
+        text-align: center;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}

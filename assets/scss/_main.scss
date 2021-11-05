@@ -1,0 +1,51 @@
+.main {
+    position: absolute;
+    top: calculate_rem(70px);
+    left: calculate_rem(270px);
+    width: calc(100vw - 16.875rem); // - 250px - 20px
+    height: calc(100vh - 5.625rem); // - 50px - 20px - 20px
+    overflow: auto;
+
+    .readPanel {
+        box-sizing: border-box;
+        margin: 0 0 calculate_rem(20px) 0;
+        padding: calculate_rem(20px);
+        width: calc(100vw - 18.125rem); // - 250px - 20px - 20px
+        min-height: calc(100vh - 10rem); // - 90px - 48px - 22px
+        background-color: $medium-grey;
+
+        .title {
+            margin: 0 0 calculate_rem(3px);
+            font-size: calculate_rem(38px);
+            font-weight: 700;
+        }
+
+        .subtitle {
+            margin: 0 0 calculate_rem(2px);
+            font-size: calculate_rem(20px);
+            font-weight: 700;
+        }
+
+        .text {
+            margin: 0;
+            text-align: justify-all;
+        }
+    }
+
+    .footer {
+        margin: 0;
+        height: calculate_rem(48px);
+        width: calc(100vw - 18.125rem); // - 250px - 20px - 20px
+        background-color: $medium-grey;
+        position: relative;
+        bottom: 0;
+
+        .text {
+            margin: 0;
+            text-align: center;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
